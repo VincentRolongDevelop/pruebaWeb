@@ -28339,7 +28339,7 @@ A.ba("Token retrieved: "+(n!=null))
 if(n==null){j=A.ag("No authentication token found")
 throw A.c(j)}j=t.N
 s=8
-return A.o(A.iu(A.bA("http://localhost:5000/api/users/current"),A.Z(["Authorization","Bearer "+A.f(n),"Content-Type","application/json"],j,j)),$async$xv)
+return A.o(A.iu(A.bA("/api/users/current"),A.Z(["Authorization","Bearer "+A.f(n),"Content-Type","application/json"],j,j)),$async$xv)
 case 8:m=b
 if(m.b===200){j=m
 l=B.l.D(0,A.aj(A.ai(j.e).c.a.h(0,"charset")).D(0,j.w))
@@ -50394,7 +50394,7 @@ return A.o(A.c2(),$async$nW)
 case 7:n=c
 i=t.N
 s=8
-return A.o(A.iu(A.bA("http://localhost:5000/api/environments"),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$nW)
+return A.o(A.iu(A.bA("/api/environments"),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$nW)
 case 8:m=c
 s=m.b===200?9:11
 break
@@ -50443,7 +50443,7 @@ s=q}while(true)switch(s){case 0:q=3
 s=6
 return A.o(A.c2(),$async$rh)
 case 6:o=a0
-i=A.bA("http://localhost:5000/api/environments")
+i=A.bA("/api/environments")
 h=t.N
 h=A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(o)],h,h)
 s=7
@@ -50494,7 +50494,7 @@ s=p}while(true)switch(s){case 0:p=4
 s=7
 return A.o(A.c2(),$async$rA)
 case 7:n=a1
-h=A.bA("http://localhost:5000/api/environments/"+b)
+h=A.bA("/api/environments/"+b)
 g=t.N
 f=A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],g,g)
 s=8
@@ -50553,7 +50553,7 @@ return A.o(A.c2(),$async$q8)
 case 7:n=d
 i=t.N
 s=8
-return A.o(A.ox(A.bA("http://localhost:5000/api/environments/"+b),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$q8)
+return A.o(A.ox(A.bA("/api/environments/"+b),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$q8)
 case 8:m=d
 s=m.b===200||m.b===204?9:11
 break
@@ -50617,7 +50617,7 @@ return A.o(A.c2(),$async$mm)
 case 7:n=c
 i=t.N
 s=8
-return A.o(A.iu(A.bA("http://localhost:5000/api/permissions"),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$mm)
+return A.o(A.iu(A.bA("/api/permissions"),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$mm)
 case 8:m=c
 s=m.b===200?9:11
 break
@@ -50666,7 +50666,7 @@ s=q}while(true)switch(s){case 0:q=3
 s=6
 return A.o(A.c2(),$async$ri)
 case 6:o=f
-k=A.bA("http://localhost:5000/api/permissions")
+k=A.bA("/api/permissions")
 j=t.N
 j=A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(o)],j,j)
 s=7
@@ -50709,7 +50709,7 @@ s=p}while(true)switch(s){case 0:p=4
 s=7
 return A.o(A.c2(),$async$rC)
 case 7:n=a0
-i=A.bA("http://localhost:5000/api/permissions/"+b)
+i=A.bA("/api/permissions/"+b)
 h=t.N
 g=A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],h,h)
 s=8
@@ -50762,7 +50762,7 @@ return A.o(A.c2(),$async$q9)
 case 7:n=a0
 h=t.N
 s=8
-return A.o(A.ox(A.bA("http://localhost:5000/api/permissions/"+b),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],h,h)),$async$q9)
+return A.o(A.ox(A.bA("/api/permissions/"+b),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],h,h)),$async$q9)
 case 8:m=a0
 s=m.b===200||m.b===204?9:11
 break
@@ -50826,7 +50826,7 @@ return A.o(A.c2(),$async$nX)
 case 7:n=a3
 f=t.N
 s=8
-return A.o(A.iu(A.bA("http://localhost:5000/api/role-permissions/role/"+a1+"/permissions"),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],f,f)),$async$nX)
+return A.o(A.iu(A.bA("/api/role-permissions/role/"+a1+"/permissions"),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],f,f)),$async$nX)
 case 8:m=a3
 s=m.b===200?9:11
 break
@@ -50883,7 +50883,7 @@ s=p}while(true)switch(s){case 0:p=4
 s=7
 return A.o(A.c2(),$async$pU)
 case 7:n=e
-j=A.bA("http://localhost:5000/api/role-permissions/bulk-assign")
+j=A.bA("/api/role-permissions/bulk-assign")
 i=t.N
 h=A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)
 s=8
@@ -50934,7 +50934,7 @@ return A.o(A.c2(),$async$rm)
 case 7:n=d
 h=t.N
 s=8
-return A.o(A.ox(A.bA("http://localhost:5000/api/role-permissions/"+b),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],h,h)),$async$rm)
+return A.o(A.ox(A.bA("/api/role-permissions/"+b),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],h,h)),$async$rm)
 case 8:m=d
 s=m.b===200?9:11
 break
@@ -50994,7 +50994,7 @@ return A.o(A.c2(),$async$mn)
 case 7:n=c
 i=t.N
 s=8
-return A.o(A.iu(A.bA("http://localhost:5000/api/roles"),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$mn)
+return A.o(A.iu(A.bA("/api/roles"),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$mn)
 case 8:m=c
 s=m.b===200?9:11
 break
@@ -51043,7 +51043,7 @@ s=q}while(true)switch(s){case 0:q=3
 s=6
 return A.o(A.c2(),$async$rj)
 case 6:o=a0
-i=A.bA("http://localhost:5000/api/roles")
+i=A.bA("/api/roles")
 h=t.N
 h=A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(o)],h,h)
 s=7
@@ -51094,7 +51094,7 @@ s=p}while(true)switch(s){case 0:p=4
 s=7
 return A.o(A.c2(),$async$rD)
 case 7:n=a1
-h=A.bA("http://localhost:5000/api/roles/"+b)
+h=A.bA("/api/roles/"+b)
 g=t.N
 f=A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],g,g)
 s=8
@@ -51153,7 +51153,7 @@ return A.o(A.c2(),$async$qb)
 case 7:n=d
 h=t.N
 s=8
-return A.o(A.ox(A.bA("http://localhost:5000/api/roles/"+b),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],h,h)),$async$qb)
+return A.o(A.ox(A.bA("/api/roles/"+b),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],h,h)),$async$qb)
 case 8:m=d
 s=m.b===200||m.b===204?9:11
 break
@@ -51214,7 +51214,7 @@ return A.o(A.c2(),$async$qs)
 case 7:n=c
 i=t.N
 s=8
-return A.o(A.iu(A.bA("http://localhost:5000/api/users?include_deleted=true"),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$qs)
+return A.o(A.iu(A.bA("/api/users?include_deleted=true"),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$qs)
 case 8:m=c
 s=m.b===200?9:11
 break
@@ -51265,7 +51265,7 @@ return A.o(A.c2(),$async$qA)
 case 7:n=d
 i=t.N
 s=8
-return A.o(A.iu(A.bA("http://localhost:5000/api/users/byEnvironment/"+b),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$qA)
+return A.o(A.iu(A.bA("/api/users/byEnvironment/"+b),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$qA)
 case 8:m=d
 s=m.b===200?9:11
 break
@@ -51314,7 +51314,7 @@ s=p}while(true)switch(s){case 0:p=4
 s=7
 return A.o(A.c2(),$async$rk)
 case 7:n=a1
-m=A.bA("http://localhost:5000/api/users/register")
+m=A.bA("/api/users/register")
 f=t.N
 e=A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],f,f)
 s=8
@@ -51380,7 +51380,7 @@ s=p}while(true)switch(s){case 0:p=4
 s=7
 return A.o(A.c2(),$async$qc)
 case 7:n=d
-m=A.bA("http://localhost:5000/api/users/"+b)
+m=A.bA("/api/users/"+b)
 h=t.N
 s=8
 return A.o(A.ox(m,A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],h,h)),$async$qc)
@@ -51428,7 +51428,7 @@ s=p}while(true)switch(s){case 0:p=4
 s=7
 return A.o(A.c2(),$async$rE)
 case 7:n=a2
-m=A.bA("http://localhost:5000/api/users/"+b)
+m=A.bA("/api/users/"+b)
 f=t.N
 e=A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],f,f)
 s=8
@@ -51491,7 +51491,7 @@ return A.o(A.c2(),$async$qt)
 case 7:n=c
 i=t.N
 s=8
-return A.o(A.iu(A.bA("http://localhost:5000/api/answers"),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$qt)
+return A.o(A.iu(A.bA("/api/answers"),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$qt)
 case 8:m=c
 s=m.b===200?9:11
 break
@@ -51540,7 +51540,7 @@ s=p}while(true)switch(s){case 0:p=4
 s=7
 return A.o(A.c2(),$async$q3)
 case 7:n=a0
-h=A.bA("http://localhost:5000/api/answers")
+h=A.bA("/api/answers")
 g=t.N
 g=A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],g,g)
 s=8
@@ -51595,12 +51595,12 @@ A.ba("Attempting to assign answer with form_question_id: "+b+" and answer_id: "+
 h=t.N
 n=A.Z(["form_question_id",b,"answer_id",c],h,t.S)
 A.ba("Sending request to assign answer:")
-A.ba("URL: http://localhost:5000/api/form-answers")
+A.ba("URL: /api/form-answers")
 A.ba("Data: "+A.f(n))
 s=7
 return A.o(A.c2(),$async$pO)
 case 7:m=a0
-g=A.bA("http://localhost:5000/api/form-answers")
+g=A.bA("/api/form-answers")
 h=A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(m)],h,h)
 s=8
 return A.o(A.kH(g,B.l.dE(n),h),$async$pO)
@@ -51658,7 +51658,7 @@ i=""+b
 A.ba("Attempting to delete form answer ID: "+i)
 h=t.N
 s=8
-return A.o(A.ox(A.bA("http://localhost:5000/api/form-answers/"+i),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],h,h)),$async$q7)
+return A.o(A.ox(A.bA("/api/form-answers/"+i),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],h,h)),$async$q7)
 case 8:m=d
 A.ba("Delete response status: "+m.b)
 i=m
@@ -51710,7 +51710,7 @@ case 7:n=e
 j=""+c
 A.ba("Attempting to update answer ID: "+j)
 A.ba("Update data: "+b.k(0))
-j=A.bA("http://localhost:5000/api/answers/"+j)
+j=A.bA("/api/answers/"+j)
 i=t.N
 i=A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)
 s=8
@@ -51765,7 +51765,7 @@ return A.o(A.c2(),$async$qw)
 case 7:n=c
 i=t.N
 s=8
-return A.o(A.iu(A.bA("http://localhost:5000/api/forms"),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$qw)
+return A.o(A.iu(A.bA("/api/forms"),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$qw)
 case 8:m=c
 s=m.b===200?9:11
 break
@@ -51816,7 +51816,7 @@ return A.o(A.c2(),$async$qv)
 case 7:n=d
 i=t.N
 s=8
-return A.o(A.iu(A.bA("http://localhost:5000/api/forms/"+b),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$qv)
+return A.o(A.iu(A.bA("/api/forms/"+b),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$qv)
 case 8:m=d
 s=m.b===200?9:11
 break
@@ -51865,7 +51865,7 @@ s=p}while(true)switch(s){case 0:p=4
 s=7
 return A.o(A.c2(),$async$p5)
 case 7:n=d
-h=A.bA("http://localhost:5000/api/forms")
+h=A.bA("/api/forms")
 g=t.N
 g=A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],g,g)
 s=8
@@ -51919,7 +51919,7 @@ s=p}while(true)switch(s){case 0:p=4
 s=7
 return A.o(A.c2(),$async$rB)
 case 7:n=a0
-h=A.bA("http://localhost:5000/api/forms/"+b)
+h=A.bA("/api/forms/"+b)
 g=t.N
 g=A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],g,g)
 s=8
@@ -51975,7 +51975,7 @@ return A.o(A.c2(),$async$oO)
 case 7:n=a0
 h=t.N
 s=8
-return A.o(A.ox(A.bA("http://localhost:5000/api/forms/"+b),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],h,h)),$async$oO)
+return A.o(A.ox(A.bA("/api/forms/"+b),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],h,h)),$async$oO)
 case 8:m=a0
 A.ba("Delete response status: "+m.b)
 g=m
@@ -52043,7 +52043,7 @@ J.d6(n,"signature_space_after","0")
 m=n
 e=A.Hc(null,null,m).f
 l=e==null?"":e
-k="http://localhost:5000/api/export/form/"+b+"?"+A.f(l)
+k="/api/export/form/"+b+"?"+A.f(l)
 s=7
 return A.o(A.iu(A.bA(k),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(o)],f,f)),$async$qr)
 case 7:j=a3
@@ -52088,7 +52088,7 @@ s=p}while(true)switch(s){case 0:p=4
 s=7
 return A.o(A.c2(),$async$q4)
 case 7:n=d
-h=A.bA("http://localhost:5000/api/questions")
+h=A.bA("/api/questions")
 g=t.N
 g=A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],g,g)
 s=8
@@ -52144,7 +52144,7 @@ return A.o(A.c2(),$async$qx)
 case 7:n=c
 i=t.N
 s=8
-return A.o(A.iu(A.bA("http://localhost:5000/api/question-types"),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$qx)
+return A.o(A.iu(A.bA("/api/question-types"),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$qx)
 case 8:m=c
 s=m.b===200?9:11
 break
@@ -52195,7 +52195,7 @@ return A.o(A.c2(),$async$qy)
 case 7:n=c
 i=t.N
 s=8
-return A.o(A.iu(A.bA("http://localhost:5000/api/questions"),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$qy)
+return A.o(A.iu(A.bA("/api/questions"),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],i,i)),$async$qy)
 case 8:m=c
 s=m.b===200?9:11
 break
@@ -52246,7 +52246,7 @@ return A.o(A.c2(),$async$pP)
 case 7:n=a2
 g=t.N
 m=A.Z(["form_id",b,"question_id",c,"order_number",a0],g,t.S)
-f=A.bA("http://localhost:5000/api/form-questions")
+f=A.bA("/api/form-questions")
 g=A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],g,g)
 s=8
 return A.o(A.kH(f,B.l.dE(m),g),$async$pP)
@@ -52303,7 +52303,7 @@ i=""+b
 A.ba("Attempting to delete form question ID: "+i)
 h=t.N
 s=8
-return A.o(A.ox(A.bA("http://localhost:5000/api/form-questions/"+i),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],h,h)),$async$qa)
+return A.o(A.ox(A.bA("/api/form-questions/"+i),A.Z(["Content-Type","application/json","Authorization","Bearer "+A.f(n)],h,h)),$async$qa)
 case 8:m=a0
 A.ba("Delete response status: "+m.b)
 i=m
@@ -52373,7 +52373,7 @@ aoN(a,b){var s=0,r=A.B(t.Wd),q,p
 var $async$Bk=A.C(function(c,d){if(c===1)return A.y(d,r)
 while(true)switch(s){case 0:p=t.N
 s=3
-return A.o(A.kH(A.bA("http://localhost:5000"+a),B.l.UD(b,null),A.Z(["Content-Type","application/json","Accept","application/json","Access-Control-Allow-Origin","*"],p,p)),$async$Bk)
+return A.o(A.kH(A.bA(a),B.l.UD(b,null),A.Z(["Content-Type","application/json","Accept","application/json","Access-Control-Allow-Origin","*"],p,p)),$async$Bk)
 case 3:q=d
 s=1
 break
